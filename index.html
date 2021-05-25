@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        ToDo App
+    </title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <div class="todo-column" id="todo-list">
+       <form action="" class="task-form">
+        <input type="text" placeholder="enter task title here" required>
+        <input type="text" placeholder="what's your task?" required>
+       </form>
+        <button type="button" , class="add-button" , onclick="addTask()">+</button>
+        <div class="todo-container" id="task-container">
+            <h1 id="task-title" class="title">
+                title 1
+            </h1>
+            <h4 id="task-text" class="text">
+                todo text here
+            </h4>
+            <p><time class="created-at" id="task-time"></time></p>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+.todo-column {
+  margin: auto;
+  width: 45%;
+  height: 50rem;
+  background: linear-gradient(
+    288deg,
+    rgba(61, 245, 255, 1) 13%,
+    rgba(223, 87, 161, 1) 100%,
+    rgba(214, 0, 255, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3df5ff",endColorstr="#d600ff",GradientType=1,);
+  border-radius: 20px;
+}
+.todo-container {
+  margin: auto;
+  width: 90%;
+  background-color: rgba(46, 104, 138, 0.322);
+  backdrop-filter: blur(5px);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+}
+
+.todo-container h1 {
+  text-align: center;
+  font-size: xx-large;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  position: relative;
+}
+
+.todo-container h4 {
+  padding: 13px;
+  font-size: large;
+  font-weight: 600;
+  color: white;
+  position: relative;
+}
+
+.created-at {
+  margin: auto;
+  font-size: small;
+  color: rgba(229, 229, 248, 0.918);
+  position: relative;
+}
+
+.add-button {
+  margin: 2rem;
+  font-size: xx-large;
+  font-weight: bolder;
+  position: relative;
+  width: 90px;
+  height: 90px;
+  border-radius: 45px;
+  color: white;
+  background-color: rgba(60, 108, 122, 0.479);
+  border: none;
+
+}
