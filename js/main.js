@@ -1,4 +1,8 @@
 function addTask() {
+  
+  const titleInput = document.querySelector("input-title");
+  const textInput = document.querySelector("input-text");
+
   let taskContainer = document.createElement("div");
   taskContainer.className = "todo-container";
   let titleTag = document.createElement("h1");
@@ -8,12 +12,10 @@ function addTask() {
   let timeTag = document.createElement("p");
   timeTag.className = "created-at";
 
-  let titleInput = document.querySelector("input-title");
-  let textInput = document.querySelector("input-text");
 
   console.log(titleInput);
-  titleTag.innerText(titleInput);
-  textTag.innerText(textInput);
+  titleTag.innerText(titleInput.value);
+  textTag.innerText(textInput.value);
   timeTag = Date.now();
 
   document
