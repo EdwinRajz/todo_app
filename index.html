@@ -10,10 +10,12 @@
 
 <body>
     <div class="todo-column" id="todo-list">
-       <form action="" class="task-form">
-        <input type="text" placeholder="enter task title here" required>
-        <input type="text" placeholder="what's your task?" required>
-       </form>
+        <div class="form-container">
+            <form action="" class="task-form" id="form">
+                <input type="text" placeholder="enter task title here" id="input-title" required>
+                <input type="text" placeholder="what's your task?" id="input-text" required>
+            </form>
+        </div>
         <button type="button" , class="add-button" , onclick="addTask()">+</button>
         <div class="todo-container" id="task-container">
             <h1 id="task-title" class="title">

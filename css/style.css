@@ -64,5 +64,9 @@ h1 {
   color: white;
   background-color: rgba(60, 108, 122, 0.479);
   border: none;
+}
 
+.form-container {
+  margin: auto;
+  width: 200px;
 }
