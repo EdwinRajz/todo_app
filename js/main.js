@@ -1,24 +1,22 @@
+const titleInput = document.querySelector(".input-title");
+const textInput = document.querySelector(".input-text");
+let taskContainer = document.createElement("div");
+taskContainer.classList.add("todo-container");
+let titleTag = document.createElement("h1");
+titleTag.classList.add("title");
+let textTag = document.createElement("h4");
+textTag.classList.add("text");
+let timeTag = document.createElement("p");
+timeTag.classList.add("created-at");
+
 function addTask() {
-  
-  const titleInput = document.querySelector("input-title");
-  const textInput = document.querySelector("input-text");
+  titleTag.innerText = titleInput.value;
+  textTag.innerText = textInput.value;
+  timeTag.innerText = Date.now();
 
-  let taskContainer = document.createElement("div");
-  taskContainer.className = "todo-container";
-  let titleTag = document.createElement("h1");
-  titleTag.className = "title";
-  let textTag = document.createElement("h4");
-  textTag.className = "text";
-  let timeTag = document.createElement("p");
-  timeTag.className = "created-at";
+  taskContainer.appendChild(titleTag);
+  taskContainer.appendChild(textTag);
+  taskContainer.appendChild(timeTag);
 
-
-  console.log(titleInput);
-  titleTag.innerText(titleInput.value);
-  textTag.innerText(textInput.value);
-  timeTag = Date.now();
-
-  document
-    .getElementById("todo-list")
-    .appendChild(taskContainer);
+  document.getElementById("todo-list").appendChild(taskContainer);
 }
