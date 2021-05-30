@@ -2,10 +2,6 @@ body {
   margin: 0;
 }
 
-h1 {
-  text-align: center;
-}
-
 .todo-column {
   margin: auto;
   width: 45%;
@@ -18,9 +14,13 @@ h1 {
   );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3df5ff",endColorstr="#d600ff",GradientType=1,);
   border-radius: 20px;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 .todo-container {
-  margin: auto;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
   width: 90%;
   background-color: rgba(46, 104, 138, 0.322);
   backdrop-filter: blur(5px);
@@ -30,16 +30,17 @@ h1 {
 }
 
 .todo-container h1 {
-  text-align: center;
+  position: relative;
   font-size: xx-large;
-  text-align: center;
   font-weight: bold;
   color: white;
-  position: relative;
+  text-align: center;
 }
 
 .todo-container h4 {
-  padding: 13px;
+  position: relative;
+  left: 10px;
+  top: 0px;
   font-size: large;
   font-weight: 600;
   color: white;
@@ -47,6 +48,8 @@ h1 {
 }
 
 .created-at {
+  bottom: 10px;
+  left: 10px;
   margin: auto;
   font-size: small;
   color: rgba(229, 229, 248, 0.918);
