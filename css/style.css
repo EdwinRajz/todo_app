@@ -56,20 +56,25 @@ body {
   position: relative;
 }
 
-.add-button {
+.add-button, .edit-button, .delete-button {
   margin: 2rem;
-  font-size: xx-large;
+  font-size: 25px;
   font-weight: bolder;
   position: relative;
   width: 90px;
   height: 90px;
-  border-radius: 45px;
+  border-radius: 40px;
   color: white;
-  background-color: rgba(60, 108, 122, 0.479);
+  background-color: rgba(90, 10, 86, 0.404);
   border: none;
+  box-shadow: 1px 1px 6px 0px #000000;
+  -webkit-box-shadow: 1px 1px 6px 0px #000000;
+  -moz-box-shadow: 1px 1px 6px 0px #000000;
 }
 
 .form-container {
   margin: auto;
   width: 200px;
 }
+
+

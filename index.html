@@ -17,8 +17,37 @@
             </form>
         </div>
         <button type="button" , class="add-button" , onclick="addTask()">+</button>
+        <button type="button" , class="edit-button" , onclick="getTasks()">edit</button>
+        <button type="button" , class="delete-button" , onclick="addTask()">delete</button>
     </div>
     <script src="js/main.js"></script>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-firestore.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyATcW_WgX0wgx49MaD9oe2GHzBx1dSmhJA",
+    authDomain: "todo-94914.firebaseapp.com",
+    projectId: "todo-94914",
+    storageBucket: "todo-94914.appspot.com",
+    messagingSenderId: "395494823382",
+    appId: "1:395494823382:web:50eaa814111cb89da84077",
+    measurementId: "G-LHYPW5HTKW"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  const firestoreDatabase = firebase.firestore();
+  firebase.analytics();
+</script>
+
 </body>
 
 </html>
